@@ -4,5 +4,6 @@ import { App } from './ui/App.jsx';
 import './styles.css';
 import './guide.css';
 import './mobile.css';
+import './quiz.css';
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);
