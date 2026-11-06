@@ -1,0 +1,17 @@
+.game-guide {
+  padding: 18px 17px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.guide-title { display: flex; align-items: center; gap: 9px; }
+.guide-title > svg, .game-guide li > span, .game-guide li b svg { color: var(--warm); }
+.guide-title h3 { margin: 3px 0 0; font-family: Georgia, serif; font-size: 18px; font-weight: 400; }
+.guide-intro { margin: 11px 0 13px; color: var(--ink-soft); font-size: 10px; line-height: 1.55; }
+.game-guide ol { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.game-guide li { display: grid; grid-template-columns: 25px 1fr; gap: 8px; }
+.game-guide li > span { padding-top: 1px; font-size: 9px; font-weight: 800; }
+.game-guide li p { margin: 0; color: var(--ink-soft); font-size: 9px; line-height: 1.45; }
+.game-guide li b { display: flex; align-items: center; gap: 4px; margin-bottom: 1px; color: var(--ink); font-size: 10px; }
+.guide-note { margin: 13px 0 0; padding-top: 10px; color: var(--ink-soft); border-top: 1px solid var(--line); font-size: 9px; line-height: 1.5; }
