@@ -33,10 +33,10 @@
   .map-footer { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
   .map-footer .save-status { grid-column: 1 / -1; margin: 3px 0 0; }
 
-  .sidebar { display: contents; }
-  .build-panel { order: 1; }
-  .tip-card { order: 2; margin: 0 14px; }
-  .game-guide { order: 3; margin: 0 14px 4px; }
+  /* `display: contents` is unreliable for touch layouts in older Safari versions. */
+  .sidebar { display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%; }
+  .build-panel { order: initial; }
+  .tip-card, .game-guide { margin: 0 14px; }
   .building-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .building-option { min-height: 74px; display: grid; grid-template-columns: 34px 1fr; grid-template-rows: 1fr auto; align-items: center; gap: 5px 8px; padding: 9px; }
   .option-icon { grid-row: 1 / -1; width: 34px; height: 34px; font-size: 18px; }
