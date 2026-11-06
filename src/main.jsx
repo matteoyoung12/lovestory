@@ -5,5 +5,6 @@ import './styles.css';
 import './guide.css';
 import './mobile.css';
 import './quiz.css';
+import './poll.css';
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);
